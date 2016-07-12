@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style.css')}}"/>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+<!--Start of Table-->
+{%for i in range(8)%}
+         <table class="hoverTable">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th scope="col" colspan=3>{{display_names[i]}}</th>
+                </tr>
+            </thead>
+            <tbody>
+			{%for j in range(10)%}
+                <tr>
+                    <th scope="row">{{j+1}}</th>
+                    <td><img src={{ list_of_tuples[i][0][j] }} ></td>
+                    <td><a href={{(list_of_tuples[i][2][j])}}> {{ list_of_tuples[i][1][j] }}</a>
+                    </td>
+				</tr>
+			{%endfor%}
+            </tbody>
+        </table>
+{%endfor%}
+
+<!--End of Table-->
+    </body>
+</html>
+
