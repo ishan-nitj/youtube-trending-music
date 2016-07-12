@@ -14,7 +14,7 @@ def getdata(url):#top music videos of all time
     for image in images[9:len(images)]:#First few images are useless
             imagelinks.append(image.img["data-thumb"])
     #Titles and Videolinks
-    links=soup.find_all("a",class_="pl-video-title-link yt-uix-tile-link yt-uix-sessionlink  spf-link ",limit=9)
+    links=soup.find_all("a",class_="pl-video-title-link yt-uix-tile-link yt-uix-sessionlink  spf-link ",limit=10)
     titles=[] #A list of size 100 containing titles of all 100 songs
     videolinks=[]#A list of size 100 containing links to all videos
     for link in links:
