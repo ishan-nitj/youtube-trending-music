@@ -1,0 +1,92 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background:url(http://onehdwallpaper.com/wp-content/uploads/2015/07/Full-HD-Music-1080p-Wallpapers.jpg)
+}
+
+table {
+  max-width: 960px;
+  margin: 10px auto;
+ background:white 
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+thead th {
+  font-weight: 400;
+  background: #8a97a0;
+  color: #FFF;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
+
+.hoverTable{
+		width:100%; 
+		border-collapse:collapse; 
+	}
+	.hoverTable td{ 
+		padding:7px;
+	}
+	/* Define the default color for all the table rows */
+	.hoverTable tr{
+		background: #e8d1f4;
+	}
+	/* Define the hover highlight color for the table row */
+    .hoverTable tr:hover {
+          background-color:#f4f7f8;
+    }
+
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+}
+
+/* selected link */
+a:active {
+    color: grey;
+}
+
