@@ -26,7 +26,6 @@ def getdata(url,no):#top music videos of all time
     for link in links:
         titles.append(link.string.strip())
         videolinks.append("https://youtube.com"+link["href"])
-    #print (videolinks[0])
     datatuple=imagelinks,titles,videolinks #make a tuple
     list_of_tuples.append(datatuple)
     print "Thread %s completed at "%(no)+str(time.ctime(time.time()))+"\n"
