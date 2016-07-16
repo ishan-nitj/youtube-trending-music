@@ -1,5 +1,5 @@
 # Youtube Trending Music
-This is a web application that displays top 10 music videos(with links provided to them) from each genre from youtube.
+This is a web application made in flask framework that displays top 10 music videos(with links provided to them) from each genre from youtube.
 
 ### Requirements
 1. requests
@@ -7,6 +7,9 @@ This is a web application that displays top 10 music videos(with links provided 
     
 2. beautifulsoup
     - sudo pip2 install beautifulsoup4
+
+3. flask
+	- sudo pip2 install flask
 
 ### Installation
 
